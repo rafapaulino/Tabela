@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PrincipalViewController : UIViewController
+@interface PrincipalViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *tabela;
+@property (nonatomic, strong) NSIndexPath *indexCelulaSelecionada;
 
 @end
